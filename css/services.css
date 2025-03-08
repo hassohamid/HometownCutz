@@ -41,6 +41,7 @@
   border: none;
   border-radius: 25px;
   background: white;
+  color: rgb(24, 24, 24);
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
