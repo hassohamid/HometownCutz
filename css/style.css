@@ -273,12 +273,39 @@ body {
   color: rgb(216, 20, 20);
 }
 
-.title-accent {
+/* .title-accent {
   display: block;
   font-size: 4rem;
   color: var(--color-primary);
   animation: slideInRight 1s ease-out forwards;
   font-weight: 600;
+} */
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.title-accent {
+  display: block;
+  font-size: 4rem;
+  color: var(--color-primary);
+  animation: slideInRight 1s ease-out forwards, wave 1s infinite ease-in-out;
+  font-weight: 600;
+  transform-origin: bottom; /* Ensures it rotates from the bottom */
 }
 
 .hero-subtitle {
