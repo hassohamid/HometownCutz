@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmation.remove();
         window.location.href = "/"; // Redirect to homepage
       }, 300);
-    }, 3000);
+    }, 4200);
   }
 
   // Add fadeOut animation
