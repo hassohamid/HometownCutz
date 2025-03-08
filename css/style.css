@@ -687,6 +687,7 @@ body {
   }
 
   .about-content {
-    margin-bottom: var(--spacing-lg);
+    margin: 0;
+    padding: 0 var(--spacing-md);
   }
 }
