@@ -5,16 +5,21 @@
 }
 
 .services-hero {
-  background: var(--color-secondary);
+  background: rgb(21, 21, 21);
   color: white;
   padding: var(--spacing-xl) var(--spacing-md);
   text-align: center;
 }
 
 .services-hero h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-primary);
+}
+
+.services-hero p {
+  color: rgba(255, 255, 255, 0.715);
+  font-weight: 400;
 }
 
 .services-container {
@@ -101,7 +106,7 @@
 }
 
 .book-cta {
-  background: var(--color-secondary);
+  background: rgb(21, 21, 21);
   color: white;
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-md);

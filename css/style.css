@@ -428,6 +428,12 @@ body {
   transform: translateX(5px);
 }
 
+.price {
+  color: black;
+  font-weight: 800;
+  color: #262626;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
