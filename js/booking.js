@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
         <div class="summary-actions">
-          <button class="confirm-btn">Confirm Booking</button>
+          <button class="confirm-btn">Confirm</button>
           <button class="cancel-btn">Cancel</button>
         </div>
       </div>
