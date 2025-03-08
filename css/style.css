@@ -221,7 +221,7 @@ body {
 .hero {
   height: 100vh;
   position: relative;
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
