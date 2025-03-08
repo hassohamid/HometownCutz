@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hometown Cutz</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/location.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <a href="/" class="logo">
+            HOMETOWN CUTZ
+            <i class="fas fa-cut logo-icon"></i>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="/services.html">Services</a>
+            <a href="/booking.html" class="book-btn">Book Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="promo-banner">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span> 🏷️ 10% OFF All Services Entire Month! </span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Stay Sharp.</span>
+            <span class="title-accent">✂️</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="fade-in"></span>
+          </p>
+          <a href="/booking.html" class="cta-button bounce">Book Your Visit</a>
+        </div>
+        <div class="hero-overlay"></div>
+      </section>
+
+      <!-- Featured Services -->
+      <section class="featured-services">
+        <h2 class="section-title">Our Signature Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-scissors"></i>
+            <h3>Classic Haircut</h3>
+            <p>Precision cut tailored to your style</p>
+            <span class="price">$30</span>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-hot-tub"></i>
+            <h3>Hot Towel Shave</h3>
+            <p>Traditional straight razor experience</p>
+            <span class="price">$25</span>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-spray-can"></i>
+            <h3>Beard Trim</h3>
+            <p>Shape and style your facial hair</p>
+            <span class="price">$20</span>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-child"></i>
+            <h3>Kids Cut</h3>
+            <p>Gentle styling for our younger clients</p>
+            <span class="price">$25</span>
+          </div>
+        </div>
+        <div class="services-cta">
+          <a href="/services.html" class="view-services-btn">
+            View All Services
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- About Preview -->
+      <section id="about" class="about-preview">
+        <div class="about-content">
+          <h2>Your Local Barbershop Since 1995</h2>
+          <p>
+            Experience the perfect blend of traditional barbering and modern
+            style at Hometown Cutz.
+          </p>
+        </div>
+        <div class="about-image">
+          <!-- Image will be set via CSS -->
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial-container">
+            <div class="testimonial-card active" data-index="0">
+              <p>
+                "Best haircut in town! The attention to detail is amazing. I've
+                never felt more confident with my style."
+              </p>
+              <div class="client-info">
+                <img
+                  src="images/person1.jpg"
+                  alt="John Davis"
+                  class="client-image"
+                />
+                <div class="client-details">
+                  <span class="client-name">John Davis</span>
+                  <span class="client-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-index="1">
+              <p>
+                "The barbers here are true artists. They take their time and
+                make sure you leave looking your absolute best."
+              </p>
+              <div class="client-info">
+                <img
+                  src="images/person2.jpg"
+                  alt="Mike Thompson"
+                  class="client-image"
+                />
+                <div class="client-details">
+                  <span class="client-name">Mike Thompson</span>
+                  <span class="client-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-index="2">
+              <p>
+                "Found my go-to barbershop! Great atmosphere, skilled barbers,
+                and always consistent results."
+              </p>
+              <div class="client-info">
+                <img
+                  src="images/person3.jpg"
+                  alt="Robert Wilson"
+                  class="client-image"
+                />
+                <div class="client-details">
+                  <span class="client-name">Robert Wilson</span>
+                  <span class="client-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-index="3">
+              <p>
+                "Professional service with a personal touch. They really listen
+                to what you want and deliver every time."
+              </p>
+              <div class="client-info">
+                <img
+                  src="images/person4.jpg"
+                  alt="David Martinez"
+                  class="client-image"
+                />
+                <div class="client-details">
+                  <span class="client-name">David Martinez</span>
+                  <span class="client-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-nav">
+            <button class="nav-dot active" data-index="0"></button>
+            <button class="nav-dot" data-index="1"></button>
+            <button class="nav-dot" data-index="2"></button>
+            <button class="nav-dot" data-index="3"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Hometown Cutz Barbershop</h3>
+          <p>123 Main Street</p>
+          <p>City, State 12345</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <p>Monday - Friday: 9am - 7pm</p>
+          <p>Saturday: 9am - 5pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Visit - Hometown Cutz</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <a href="/" class="logo">
+            HOMETOWN CUTZ
+            <i class="fas fa-cut logo-icon"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="booking-page">
+      <div class="booking-container">
+        <div class="booking-steps">
+          <div class="step active" data-step="1">
+            <div class="step-number">1</div>
+            <div class="step-label">Select Service</div>
+          </div>
+          <div class="step" data-step="2">
+            <div class="step-number">2</div>
+            <div class="step-label">Choose Time</div>
+          </div>
+          <div class="step" data-step="3">
+            <div class="step-number">3</div>
+            <div class="step-label">Your Details</div>
+          </div>
+        </div>
+
+        <div class="booking-content">
+          <!-- Step 1: Service Selection -->
+          <div class="booking-section active" id="service-selection">
+            <h2>Select Your Service</h2>
+            <div class="service-options">
+              <div class="service-card" data-service="haircut">
+                <h3>Classic Haircut</h3>
+                <p>Precision cut tailored to your style</p>
+                <span class="price">$30</span>
+              </div>
+
+              <div class="service-card" data-service="shave">
+                <h3>Hot Towel Shave</h3>
+                <p>Traditional straight razor experience</p>
+                <span class="price">$25</span>
+              </div>
+
+              <div class="service-card" data-service="beard">
+                <h3>Beard Trim</h3>
+                <p>Shape and style your facial hair</p>
+                <span class="price">$20</span>
+              </div>
+
+              <div class="service-card" data-service="kids">
+                <h3>Kids Cut</h3>
+                <p>Gentle styling for our younger clients</p>
+                <span class="price">$25</span>
+              </div>
+
+              <div class="service-card" data-service="fade">
+                <h3>Fade</h3>
+                <p>Seamless gradient from skin to length</p>
+                <span class="price">$35</span>
+              </div>
+
+              <div class="service-card" data-service="lineup">
+                <h3>Line Up</h3>
+                <p>Clean, sharp edges and precise lines</p>
+                <span class="price">$15</span>
+              </div>
+
+              <div class="service-card" data-service="design">
+                <h3>Hair Design</h3>
+                <p>Custom hair art and patterns</p>
+                <span class="price">$45</span>
+              </div>
+
+              <div class="service-card" data-service="color">
+                <h3>Hair Color</h3>
+                <p>Professional coloring and highlights</p>
+                <span class="price">$60</span>
+              </div>
+
+              <div class="service-card" data-service="facial">
+                <h3>Facial Treatment</h3>
+                <p>Relaxing facial with hot towel</p>
+                <span class="price">$35</span>
+              </div>
+
+              <div class="service-card" data-service="package">
+                <h3>Full Package</h3>
+                <p>Haircut, beard trim, and facial</p>
+                <span class="price">$75</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Time Selection -->
+          <div class="booking-section" id="time-selection">
+            <h2>Choose Your Time</h2>
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <button class="calendar-nav prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <h3 class="current-month">September 2023</h3>
+                <button class="calendar-nav next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="calendar-grid">
+                <!-- Will be populated by JavaScript -->
+              </div>
+            </div>
+            <div class="time-slots">
+              <h3>Available Times for Selected Date</h3>
+              <div class="time-grid">
+                <!-- Will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Personal Details -->
+          <div class="booking-section" id="personal-details">
+            <h2>Your Details</h2>
+            <form class="booking-form">
+              <div class="form-group">
+                <div class="input-container">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    placeholder="Your Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="Your Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <i class="fas fa-phone"></i>
+                  <input
+                    type="tel"
+                    id="phone"
+                    required
+                    placeholder="Your Phone"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <i class="fas fa-comment"></i>
+                  <textarea
+                    id="notes"
+                    placeholder="Any special requests?"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="booking-navigation">
+          <button class="nav-btn back" style="display: none">
+            <i class="fas fa-arrow-left"></i> Back
+          </button>
+          <button class="nav-btn next">
+            Next <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="nav-btn confirm" style="display: none">
+            Confirm Booking <i class="fas fa-check"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/booking.js"></script>
+  </body>
+</html>
