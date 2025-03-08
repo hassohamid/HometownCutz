@@ -263,6 +263,15 @@ body {
 .title-line {
   display: block;
   animation: slideInLeft 1s ease-out forwards;
+  font-size: 3rem;
+}
+
+.dot {
+  color: rgb(216, 20, 20);
+}
+
+.stay {
+  color: rgb(216, 20, 20);
 }
 
 .title-accent {
