@@ -448,7 +448,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing-xl) var(--spacing-md);
-  align-items: center;
 }
 
 .about-content {
@@ -669,5 +668,25 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about-content {
+    margin-bottom: var(--spacing-lg);
   }
 }
